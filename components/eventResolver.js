@@ -91,7 +91,7 @@ function addNewPerson() {
     let uploadDiv = document.createElement('div');
     uploadDiv.innerHTML = `
         <div style="display: flex; align-items: center">
-            <div class="label">Редакторовать фото:</div>
+            <div class="label">Редактировать фото:</div>
             <svg style="margin-left: 16px; cursor: pointer"  width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="clickUlpoadFile(${newId})">
                 <rect x="0.5" y="0.5" width="31" height="31" rx="3.5" stroke="#CED4D8"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5057 10.5437L18.9512 11.947L12.5423 18.3628C12.2207 18.6863 12.2207 19.2071 12.5423 19.5307C12.8475 19.8378 13.3573 19.8364 13.6592 19.529L20.7103 12.4674C21.7397 11.4318 21.7397 9.76857 20.7103 8.73294C19.7282 7.74484 17.9904 7.76682 17.0279 8.73482L9.33168 16.437C7.59409 18.1844 7.59409 20.9904 9.33168 22.7378C11.019 24.4346 13.9175 24.407 15.5784 22.7362L24.5544 13.749L26 15.1522L17.0256 24.1378C14.5771 26.6008 10.3719 26.6409 7.88297 24.1379C5.37205 21.6127 5.37205 17.562 7.8847 15.0352L15.5809 7.33301C17.3291 5.57494 20.3735 5.53644 22.1593 7.33316C23.9617 9.14642 23.9617 12.0539 22.1577 13.8688L15.1108 20.9262C14.0207 22.0361 12.197 22.0411 11.0932 20.9304C9.99882 19.8292 9.99882 18.0643 11.095 16.9612L17.5057 10.5437Z" fill="#0C273E" fill-opacity="0.5"/>
@@ -113,9 +113,9 @@ function addNewPerson() {
     commonDescrDiv.appendChild(textDescrDiv);
     commonDescrDiv.appendChild(descrArea);
 
-    commonDiv.appendChild(uploadDiv);
     commonDiv.appendChild(nameInput);
     commonDiv.appendChild(statusInput);
+    commonDiv.appendChild(uploadDiv);
     commonDiv.appendChild(commonDescrDiv);
 
     if (newPersDescr.length) {
