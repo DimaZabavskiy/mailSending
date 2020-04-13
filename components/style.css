@@ -1,0 +1,108 @@
+.content {
+    background: #F4F4F4;
+    max-width: 256px;
+    height: 96px;
+    padding: 16px 16px;
+    outline: none;
+    cursor: text;
+    margin-bottom: 16px;
+}
+.uploadFiles{
+    display: none;
+}
+#workMode1 {
+    display: none;
+}
+#workMode2 {
+    display: none;
+}
+
+.workModeItems {
+    line-height: 36px;
+    font-size: 24px;
+    padding: 0 8px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-right: 16px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.chosenWorkMode {
+    font-weight: bold;
+    background-color: lightgray;
+    cursor: auto;
+}
+.label {
+    display: inline-block;
+    font-size: 20px;
+    margin: 16px 0;
+}
+.input {
+    display: block;
+    min-width: 500px;
+    line-height: 36px;
+    padding: 4px 8px;
+    font-size: 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid lightblue;
+}
+.mainText, .newPersDescr {
+    display: block;
+    min-width: 500px;
+    min-height: 200px;
+    padding: 4px 8px;
+    font-size: 20px;
+    line-height: 30px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid lightblue;
+}
+.mailPreview {
+    text-align: center;
+    font-size: 20px;
+}
+
+#addNewPerson {
+    cursor: pointer;
+    display: inline-block;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+    margin: 16px 0 32px;
+}
+.deleteNewPers {
+    cursor: pointer;
+    display: inline-block;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    margin-top: 16px;
+}
+.deleteAddedFile {
+    cursor: pointer;
+    font-style: italic;
+    font-size: 14px;
+    color: red;
+    margin-left: 8px;
+}
+.rememberInfo {
+    cursor: pointer;
+    font-style: italic;
+    font-size: 14px;
+    color: green;
+    margin-left: 8px;
+}
+.button {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 16px 0
+}
