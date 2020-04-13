@@ -341,7 +341,7 @@ function createHTML () {
             );
         }
     });
-    addFiles = [];
+    // addFiles = [];
     return {text, imgs, theme};
 }
 
