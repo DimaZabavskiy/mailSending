@@ -572,7 +572,7 @@ function addIdentificationValues() {
     let result = {};
     result.sender = localStorage['sender'] || document.getElementById('senderName').value;
     result.receiver = localStorage['receiver'] || document.getElementById('receiverName').value;
-    result.ident = localStorage['identification'] || {
+    result.ident = localStorage['identification'] ? JSON.parse(localStorage['identification']) : {
         name: document.getElementById('identificationName').value,
         pass: document.getElementById('identificationPass').value
     };

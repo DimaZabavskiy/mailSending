@@ -117,7 +117,6 @@ function removeTags(str,replaceStr="") {
 
 
 function sendEmail2(identification,theme,body, attachments) {
-    const ident = JSON.parse(identification.ident);
 
     return new Promise( (resolve,reject) => {
         let mailer_transportConfig = {
@@ -125,8 +124,8 @@ function sendEmail2(identification,theme,body, attachments) {
             port: 587, // порт
             secure: false,
             auth: {
-                user: ident.name, // логин-пароль к почтовому ящику, откуда идёт отправка
-                pass: ident.pass
+                user: identification.ident.name, // логин-пароль к почтовому ящику, откуда идёт отправка
+                pass: identification.ident.pass
             }
         };
         let transporter = nodemailer.createTransport(mailer_transportConfig);
