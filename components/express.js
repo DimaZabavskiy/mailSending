@@ -59,7 +59,7 @@ webserver.post('/letterSending', (req,res) => {
 
     sendEmail2(req.body.identification,req.body.theme, req.body.text, attachments)
         .then( () => {
-            deleteFiles(uploadFiles);
+            // deleteFiles(uploadFiles);
             res.send(JSON.stringify({
                 errorCode: 0
             }));
